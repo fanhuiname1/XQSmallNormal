@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.small.indeedfortunate.xqsmallnormal.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <RadioGroup
+        android:layout_marginTop="1dp"
+        android:id="@+id/main_tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/Tv_HomePage"
+            style="@style/MainTab_Selector"
+            android:text="首页"
+            android:drawablePadding="@dimen/dp5"
+            android:drawableTop="@drawable/main_tab_home_page_selector"/>
+        <RadioButton
+            android:id="@+id/Tv_Business"
+            style="@style/MainTab_Selector"
+            android:drawablePadding="@dimen/dp5"
+            android:text="商户管理"
+            android:drawableTop="@drawable/main_tab_manage_selector"/>
+        <RadioButton
+            android:id="@+id/Tv_More"
+            style="@style/MainTab_Selector"
+            android:drawablePadding="@dimen/dp4"
+            android:text="更多"
+            android:drawableTop="@drawable/main_tab_setting_selector"/>
+    </RadioGroup>
+
+
+</LinearLayout>

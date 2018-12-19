@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBarStyle"
+        android:background="#FFFFFF">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/nav_back"/>
+        
+        <RadioGroup
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp27"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="收款消息"
+                android:layout_gravity="center"
+                android:textSize="13sp"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="收款消息"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:textSize="13sp"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp21"
+            android:text="清空"
+            android:layout_gravity="right"
+            android:textColor="#ff262626"
+            android:textSize="14sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

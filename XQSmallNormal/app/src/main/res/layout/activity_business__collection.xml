@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="android.small.indeedfortunate.xqsmallnormal.activity.login.Business_CollectionActivity">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBarStyle">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nav_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商户收款码"
+            android:textColor="#ff262626"
+            android:textSize="@dimen/sp16"
+            android:layout_gravity="center"
+            />
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"
+        android:background="#FBFBFB"></View>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        android:background="@mipmap/receipt_bg"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"/>
+
+</LinearLayout>

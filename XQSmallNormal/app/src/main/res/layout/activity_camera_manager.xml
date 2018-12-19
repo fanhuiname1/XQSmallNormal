@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.small.indeedfortunate.xqsmallnormal.camera.CameraManagerActivity">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBarStyle">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nav_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相册管理"
+            android:textColor="#ff262626"
+            android:layout_gravity="center"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建相册"
+            android:textColor="#ff262626"
+            android:textSize="14sp"
+            android:layout_gravity="right"
+            android:paddingRight="@dimen/dp15"
+            />
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="#e8e8e8"></View>
+
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="@dimen/dp164"
+        android:stretchMode="spacingWidthUniform"
+        android:numColumns="2"
+        />
+
+</LinearLayout>

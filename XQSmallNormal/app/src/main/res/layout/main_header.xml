@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp10"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nav_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商户认证"
+            android:layout_centerInParent="true"
+            android:textColor="#ff262626"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

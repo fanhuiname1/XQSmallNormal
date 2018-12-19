@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp20"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/systematic_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:src="@mipmap/nav_search_image"/>
+    <TextView
+        android:id="@+id/systematic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小确幸团队"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_toRightOf="@+id/systematic_img"
+        android:textColor="#ff262626"
+        android:layout_gravity="center_vertical"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="109dp"
+        android:layout_height="12dp"
+        android:text="2018-02-21 15:39:23"
+        android:textColor="#ff999999"
+        android:textSize="11sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp20"
+        />
+    <TextView
+        android:id="@+id/systematic_src"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:text="“小确幸”团队至用户的一封信"
+        android:layout_toRightOf="@+id/systematic_img"
+        android:textColor="#ff999999"
+        android:layout_marginTop="@dimen/dp10"
+        android:textSize="13sp"
+        android:layout_below="@+id/systematic_title"
+        />
+</RelativeLayout>

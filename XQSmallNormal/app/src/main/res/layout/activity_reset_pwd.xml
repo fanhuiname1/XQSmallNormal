@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.small.indeedfortunate.xqsmallnormal.ResetPwdActivity">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBarStyle">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nav_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置登录密码"
+            android:textColor="#ff262626"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="#e8e8e8"
+        android:layout_marginBottom="@dimen/dp40"/>
+    <EditText
+        android:id="@+id/et_oldpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:hint="请输入原密码"
+        android:textSize="16sp"
+        android:drawableBottom="@drawable/shape_et_bottom_line"
+        android:drawableLeft="@mipmap/login_icon1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:hint="请设置登录密码（6-16位数字或字母）"
+        android:textSize="16sp"
+        android:drawableBottom="@drawable/shape_et_bottom_line"
+        android:drawableLeft="@mipmap/login_icon4" />
+    <EditText
+        style="@style/EditText_Layout"
+
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:textSize="16sp"
+        android:hint="请再次输入密码"
+        android:drawablePadding="@dimen/dp10"
+        android:drawableLeft="@mipmap/login_icon4" />
+
+    <Button
+        style="@style/Verify_Button"
+        android:text="提交"/>
+</LinearLayout>

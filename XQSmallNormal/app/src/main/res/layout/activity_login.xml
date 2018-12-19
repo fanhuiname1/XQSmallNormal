@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".activity.login.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:fitsSystemWindows="true"
+        style="@style/ToolBarStyle"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textColor="#ff262626"
+            android:text="登录"/>
+        <TextView
+            android:id="@+id/Business_regist"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="14sp"
+            android:textColor="#ff5b5b5b"
+            android:layout_marginRight="23dp"
+            android:text="商户注册"
+            tools:ignore="OnClick" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="49dp"/>
+    <TextView
+        android:layout_width="84dp"
+        android:layout_height="20dp"
+        android:text="小确幸商家版"
+        android:textColor="#ffff9f00"
+        android:textSize="14sp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        />'
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp28"
+        android:layout_marginBottom="@dimen/dp10"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/Rb_codelogin"
+            style="@style/Login_account"
+            android:button="@null"
+            android:onClick="onClick"
+            android:text="验证码登录"
+            android:checked="true"
+            android:drawableBottom="@drawable/codeandaccount_selector"
+            android:textColor="@drawable/login_textcolor"
+            tools:ignore="OnClick" />
+
+            />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="#cccccc"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+        <RadioButton
+            android:id="@+id/Rb_accountlogin"
+            style="@style/Login_account"
+            android:text="账号密码登录"
+            android:button="@null"
+            android:onClick="onClick"
+            android:textSize="15sp"
+            android:checked="false"
+            android:drawableBottom="@drawable/codeandaccount_selector"
+            android:textColor="@drawable/login_textcolor"/>
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/ll_authcode"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+      >
+        <EditText
+            android:id="@+id/login_telphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="onClick"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="11"
+            android:hint="请输入手机号"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@mipmap/login_icon1"
+            android:drawableBottom="@drawable/shape_et_bottom_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <EditText
+                android:id="@+id/new_auth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:maxLength="16"
+                android:padding="10dp"
+                android:onClick="onClick"
+                android:drawablePadding="10dp"
+                android:hint="请输入验证码"
+                android:drawableBottom="@drawable/shape_et_bottom_line"
+                android:drawableLeft="@mipmap/login_icon2" />
+            <TextView
+                android:id="@+id/Tv_gain_authcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="onClick"
+                android:paddingRight="20dp"
+                android:textColor="@drawable/authcode_textcolor_selector"
+                android:layout_marginTop="15dp"
+                android:text="获取验证码"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_authpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="onClick"
+            android:visibility="gone"
+            android:hint="请输入账号"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@mipmap/login_icon3"
+            android:drawableBottom="@drawable/shape_et_bottom_line" />
+
+            <EditText
+                android:id="@+id/new_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLength="16"
+                android:onClick="onClick"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:drawablePadding="10dp"
+                android:hint="请输入密码"
+                android:drawableRight="@mipmap/login_btn_nosee"
+                android:drawableBottom="@drawable/shape_et_bottom_line"
+                android:drawableLeft="@mipmap/login_icon4" />
+
+
+            <TextView
+                android:id="@+id/retrieve_password"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="找回密码"
+                android:textColor="#ffbbbbbb"
+                android:textSize="@dimen/sp15"
+                android:layout_gravity="right"
+                />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:onClick="onClick"
+        android:layout_width="@dimen/dp325"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp15"
+        android:layout_gravity="center"
+        android:text="登录"
+        android:layout_marginTop="29dp"
+        android:textColor="#ffffffff"
+        style="@style/LoginButton"
+        tools:ignore="OnClick" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="android.small.indeedfortunate.xqsmallnormal.activity.login.register.Map_BusinessareaActivity">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBarStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@mipmap/nav_back" />
+
+        <EditText
+            android:layout_width="@dimen/dp270"
+            android:layout_height="@dimen/dp32"
+            android:background="@drawable/search_loaction"
+            android:drawableLeft="@mipmap/nav_search_image"
+            android:hint="   请输入搜索地点"
+            android:paddingLeft="@dimen/dp10"
+            android:textSize="@dimen/dp14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="@dimen/dp11"
+            android:text="保存"
+            android:textColor="#ffff9f00"
+            android:textSize="@dimen/sp16" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp270"
+        />
+
+       <ListView
+           android:id="@+id/address_details"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

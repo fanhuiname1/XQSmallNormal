@@ -1,0 +1,190 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+    <!-- dialog的动画 -->
+    <style name="main_menu_animStyle">
+        windowEnterAnimation 进入的动画
+        代码里面
+        <item name="android:windowEnterAnimation">@anim/dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_anim</item>
+    </style>
+
+    <style name="LoginButton" parent="CommonButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/login_button</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CommonButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp47</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/dp16</item>
+    </style>
+
+    <style name="cm_horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp1</item>
+        <item name="android:layout_marginLeft">@dimen/dp20</item>
+        <item name="android:layout_marginRight">@dimen/dp20</item>
+        <item name="android:background">@color/orangered</item>
+    </style>
+
+    <style name="MainTabTxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/recommend_color</item>
+        <item name="android:textSize">10.67sp</item>
+    </style>
+
+    <style name="MainTab_Selector">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/sp10</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="MainTab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Login_account">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">@dimen/dp2</item>
+
+    </style>
+
+    <style name="Verify_Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp25</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:background">@drawable/btn_orange_select</item>
+        <item name="android:layout_marginTop">@dimen/dp50</item>
+        <item name="android:layout_marginRight">@dimen/dp25</item>
+    </style>
+
+    <style name="EditText_Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp20</item>
+        <item name="android:layout_marginRight">@dimen/dp20</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">@dimen/dp10</item>
+        <item name="android:drawableBottom">@drawable/shape_et_bottom_line</item>
+    </style>
+
+    <style name="ToolBarStyle">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp10</item>
+    </style>
+
+    <style name="BasicStyle">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">@dimen/dp20</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="FixationStyle">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff262626</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/dp15</item>
+    </style>
+
+    <style name="FixationTextStyle">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff999999</item>
+        <item name="android:textSize">@dimen/sp13</item>
+    </style>
+
+    <style name="FixationIvStyle">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp1</item>
+        <item name="android:layout_marginLeft">@dimen/dp20</item>
+        <item name="android:layout_marginRight">@dimen/dp20</item>
+        <item name="android:background">#F4F4F4</item>
+    </style>
+
+    <style name="memberStyle">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dp10</item>
+        <item name="android:layout_marginTop">@dimen/dp14</item>
+        <item name="android:textColor">#ff5b5b5b</item>
+        <item name="android:textSize">@dimen/dp13</item>
+    </style>
+
+    <style name="proTextView">
+
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:layout_marginTop">@dimen/dp40</item>
+    <item name="android:textColor">#ff5b5b5b</item>
+    <item name="android:textSize">@dimen/dp12</item>
+    </style>
+
+    <style name="proNumStyle">
+        android:layout_marginTop="@dimen/dp5"
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">#ffff9f00</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:layout_marginTop">@dimen/dp5</item>
+    </style>
+</resources>

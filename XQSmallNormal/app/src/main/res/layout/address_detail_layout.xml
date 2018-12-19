@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Restaurant_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日昌餐馆（惠新东街店）"
+            android:textColor="#ff262626"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/dp10"
+            />
+        <TextView
+            android:id="@+id/Restaurant_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Restaurant_title"
+            android:text="南三环西路65号(玉泉营桥东北角)"
+            android:textColor="#ff999999"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/dp5"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home_btn_sele"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp20"
+            />
+</RelativeLayout>
